@@ -7,4 +7,4 @@ COPY Pipfile.lock Pipfile.lock
 RUN pip install pipenv
 RUN pipenv install
 
-CMD ["python", "./client.py"]
+CMD ["pipenv", "run", "python ./client.py"]
